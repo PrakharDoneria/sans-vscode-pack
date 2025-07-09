@@ -3,11 +3,13 @@
   "displayName": "Sanskrit Programming Language",
   "description": "Sanskrit-based programming language support for VS Code.",
   "version": "1.0.0",
-  "publisher": "your-name-here",
+  "publisher": "ProTecGames",
   "engines": {
     "vscode": "^1.70.0"
   },
   "categories": ["Programming Languages"],
+  "activationEvents": [
+  ],
   "contributes": {
     "languages": [
       {
@@ -24,6 +26,12 @@
         "path": "./syntaxes/sanskrit.tmLanguage.json"
       }
     ],
+    "commands": [
+      {
+        "command": "sanskrit.hello",
+        "title": "Sanskrit: जय संस्कृतम्"
+      }
+    ],
     "iconThemes": [
       {
         "id": "sanskrit-icons",
@@ -32,11 +40,11 @@
       }
     ]
   },
-  "icon": "icons/sanskrit.svg",
-  "activationEvents": ["onLanguage:sanskrit"],
+  "icon": "icons/sanskrit.png",
   "main": "./extension.js",
   "scripts": {
-    "vscode:prepublish": "npx vsce package"
+    "vscode:prepublish": "npx @vscode/vsce package",
+    "package": "npx @vscode/vsce package"
   },
   "devDependencies": {
     "vsce": "^2.21.0"
