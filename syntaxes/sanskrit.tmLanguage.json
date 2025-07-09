@@ -1,0 +1,28 @@
+{
+  "scopeName": "source.sanskrit",
+  "patterns": [
+    {
+      "match": "\\b(कार्य|मुद्रण|यदि|अथवा|यावत्|वापसी|स्थिर|धारणा|प्रति|आयात)\\b",
+      "name": "keyword.control.sanskrit"
+    },
+    {
+      "match": "शून्य|सत्य|असत्य",
+      "name": "constant.language.sanskrit"
+    },
+    {
+      "match": "\".*?\"",
+      "name": "string.quoted.double.sanskrit"
+    },
+    {
+      "match": "[०१२३४५६७८९]+",
+      "name": "constant.numeric.devnagari.sanskrit"
+    },
+    {
+      "match": "#.*$",
+      "name": "comment.line.number-sign.sanskrit"
+    }
+  ],
+  "fileTypes": ["sans"],
+  "uuid": "e7f45c6e-bf0b-44cc-94e0-fake-sanskrit-id",
+  "name": "Sanskrit"
+}

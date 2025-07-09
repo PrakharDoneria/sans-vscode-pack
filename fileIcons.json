@@ -1,0 +1,10 @@
+{
+  "fileExtensions": {
+    "sans": "_sanskrit"
+  },
+  "icons": {
+    "_sanskrit": {
+      "iconPath": "./icons/sanskrit.svg"
+    }
+  }
+}

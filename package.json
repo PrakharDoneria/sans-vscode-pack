@@ -1,0 +1,44 @@
+{
+  "name": "sanskrit-lang",
+  "displayName": "Sanskrit Programming Language",
+  "description": "Sanskrit-based programming language support for VS Code.",
+  "version": "1.0.0",
+  "publisher": "your-name-here",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "sanskrit",
+        "aliases": ["Sanskrit", "sanskrit"],
+        "extensions": [".sans"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sanskrit",
+        "scopeName": "source.sanskrit",
+        "path": "./syntaxes/sanskrit.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "sanskrit-icons",
+        "label": "Sanskrit Icon Theme",
+        "path": "./fileIcons.json"
+      }
+    ]
+  },
+  "icon": "icons/sanskrit.svg",
+  "activationEvents": ["onLanguage:sanskrit"],
+  "main": "./extension.js",
+  "scripts": {
+    "vscode:prepublish": "npx vsce package"
+  },
+  "devDependencies": {
+    "vsce": "^2.21.0"
+  }
+}
