@@ -44,7 +44,7 @@ Because VS Code doesn’t let language extensions define icons directly (hella s
 
 ## 📁 File Icon Preview
 
-![Sanskrit icon in file explorer](./icons/sanskrit.svg)
+![icon](https://github.com/PrakharDoneria/sans-vscode-pack/raw/HEAD/icons/sanskrit.png)
 
 > Want to change the icon? Replace `icons/sanskrit.svg` with your own. Use SVG for best quality.
 

@@ -7,13 +7,15 @@ const vscode = require("vscode");
 function activate(context) {
   console.log("✅ Sanskrit Language Extension activated.");
 
-  // Register a simple command for the command palette
-  const disposable = vscode.commands.registerCommand("sanskrit.hello", () => {
-    vscode.window.showInformationMessage("🕉 जय संस्कृतम्! 🚀");
-  });
+  try {
+    const disposable = vscode.commands.registerCommand("sanskrit.hello", () => {
+      vscode.window.showInformationMessage("🕉 जय संस्कृतम्! 🚀");
+    });
 
-  // Push command to subscriptions so it gets disposed automatically
-  context.subscriptions.push(disposable);
+    context.subscriptions.push(disposable);
+  } catch (err) {
+    console.error("💥 Error registering command 'sanskrit.hello':", err);
+  }
 }
 
 /**
