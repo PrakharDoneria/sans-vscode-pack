@@ -7,9 +7,12 @@
   "engines": {
     "vscode": "^1.70.0"
   },
-  "categories": [
-    "Programming Languages"
+  "categories": ["Programming Languages"],
+  "activationEvents": [
+    "onCommand:sanskrit.hello",
+    "onLanguage:sanskrit"
   ],
+  "main": "./extension.js",
   "contributes": {
     "languages": [
       {
@@ -41,7 +44,6 @@
     ]
   },
   "icon": "icons/sanskrit.png",
-  "main": "./extension.js",
   "scripts": {
     "vscode:prepublish": "npx @vscode/vsce package",
     "package": "npx @vscode/vsce package"
