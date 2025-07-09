@@ -1,65 +1,71 @@
-# sanskrit-lang README
+# 🕉 Sanskrit Icon Theme for VS Code
 
-This is the README for your extension "sanskrit-lang". After writing up a brief description, we recommend including the following sections.
+This extension provides a **custom file icon** for `.sans` files used in the [Sanskrit Programming Language](https://github.com/prakhardoneria/sanskrit-lang). 
 
-## Features
+Because VS Code doesn’t let language extensions define icons directly (hella skill issue), this theme adds a beautiful Devanagari 🕉️ icon to make your `.sans` files stand out like Vedic gold.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## 🔥 Features
 
-For example if there is an image subfolder under your extension project workspace:
+- ✅ Custom file icon for `.sans` files
+- ✅ Works alongside any syntax-highlighting/language extension
+- ✅ SVG-based crisp icon support
+- ✅ Built for use with the Sanskrit Programming Language
 
-\!\[feature X\]\(images/feature-x.png\)
+## 📦 How to Use
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Clone or download this repo:
 
-## Requirements
+   ```bash
+   git clone https://github.com/PrakharDoneria/sans-vscode-pack.git
+   cd sans-vscode-pack
+   npm install
+   ```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+2. Launch the extension:
 
-## Extension Settings
+   * Open the folder in VS Code
+   * Press `F5` to open the **Extension Development Host**
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+3. In the new window:
 
-For example:
+   * Press `Ctrl+Shift+P`
+   * Run: `File Icon Theme: Sanskrit Icon Theme`
 
-This extension contributes the following settings:
+4. Open a `.sans` file.
+   🎉 You should now see your custom icon in the Explorer sidebar.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## 🧪 Example
 
-## Known Issues
+```plaintext
+📁 examples/
+├── hello.sans      <-- 👀 Now has a Sanskrit icon!
+├── fibonacci.sans
+```
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## 📁 File Icon Preview
 
-## Release Notes
+![Sanskrit icon in file explorer](./icons\sanskrit.svg)
 
-Users appreciate release notes as you update your extension.
+> Want to change the icon? Replace `icons/sanskrit.svg` with your own. Use SVG for best quality.
 
-### 1.0.0
+## 🛠 Related Extensions
 
-Initial release of ...
+* [Sanskrit Language Support](https://github.com/prakhardoneria/sanskrit-lang) – Syntax highlighting, REPL, and compiler support.
 
-### 1.0.1
+## 💡 Pro Tips
 
-Fixed issue #.
+* You can package this icon theme and install it via `.vsix`:
 
-### 1.1.0
+  ```bash
+  npm install -g vsce
+  vsce package
+  code --install-extension sanskrit-icon-theme-*.vsix
+  ```
 
-Added features X, Y, and Z.
+## 🔗 License
+
+MIT – Use it, fork it, Sanskrit-ify the universe.
 
 ---
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Made with 🕉 by [@prakhardoneria](https://github.com/prakhardoneria)
